@@ -6,11 +6,11 @@ Created on Wed Sep 30 22:52:00 2020
 """
 
 from flask import Flask, render_template, request
-import jsonify
-import requests
+#import jsonify
+#import requests
 import pickle
 import numpy as np
-import sklearn
+#import sklearn
 from sklearn.preprocessing import StandardScaler
 
 
@@ -39,7 +39,7 @@ def predict():
             Fuel_Type_Diesel=1
         else:
             Fuel_Type_Petrol=0
-            Fuel_Type_Petrol=0
+            Fuel_Type_Diesel=0
         Year=2020-Year
         Seller_Type=request.form['Seller_Type']
         if(Seller_Type=='Individual'):
